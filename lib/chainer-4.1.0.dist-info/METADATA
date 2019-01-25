@@ -1,0 +1,49 @@
+Metadata-Version: 2.0
+Name: chainer
+Version: 4.1.0
+Summary: A flexible framework of neural networks
+Home-page: https://chainer.org/
+Author: Seiya Tokui
+Author-email: tokui@preferred.jp
+License: MIT License
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: filelock
+Requires-Dist: numpy (>=1.9.0)
+Requires-Dist: protobuf (>=3.0.0)
+Requires-Dist: six (>=1.9.0)
+Provides-Extra: appveyor
+Requires-Dist: autopep8; extra == 'appveyor'
+Requires-Dist: hacking (==1.0.0); extra == 'appveyor'
+Requires-Dist: mock; extra == 'appveyor'
+Requires-Dist: pytest; extra == 'appveyor'
+Requires-Dist: pytest-cov; extra == 'appveyor'
+Requires-Dist: pytest-timeout; extra == 'appveyor'
+Provides-Extra: cuda
+Requires-Dist: cupy (==4.1.0); extra == 'cuda'
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+Provides-Extra: doctest
+Requires-Dist: matplotlib; extra == 'doctest'
+Requires-Dist: theano; extra == 'doctest'
+Provides-Extra: stylecheck
+Requires-Dist: autopep8; extra == 'stylecheck'
+Requires-Dist: hacking (==1.0.0); extra == 'stylecheck'
+Provides-Extra: test
+Requires-Dist: mock; extra == 'test'
+Requires-Dist: pytest; extra == 'test'
+Provides-Extra: travis
+Requires-Dist: autopep8; extra == 'travis'
+Requires-Dist: h5py; extra == 'travis'
+Requires-Dist: hacking (==1.0.0); extra == 'travis'
+Requires-Dist: mock; extra == 'travis'
+Requires-Dist: pillow; extra == 'travis'
+Requires-Dist: pytest; extra == 'travis'
+Requires-Dist: pytest-cov; extra == 'travis'
+Requires-Dist: pytest-timeout; extra == 'travis'
+Requires-Dist: theano; extra == 'travis'
+
+UNKNOWN
+
+

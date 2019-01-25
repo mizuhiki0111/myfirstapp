@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>画風変換アプリ「HASUI MAKER」</title>
+    <link href="{% static "vendor/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+
+       <!-- Custom Fonts -->
+       <link href="{% static "vendor/fontawesome-free/css/all.min.css" %}" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+
+
+
+       <!-- Custom CSS -->
+       <link href="{% static "css/stylish-port.css" %}" rel="stylesheet">
+       <link href="{% static "css/stylish-portfolio.css" %}" rel="stylesheet">
+       <link href="{% static "css/skin.css" %}" rel="stylesheet">
+       <link href="{% static "css/layout.css" %}" rel="stylesheet">
+  </head>
+
+
+  <body id="page-top">
+
+
+
+
+      <!-- Navigation -->
+
+      <!-- Header -->
+      <header class="masthead d-flex">
+        <div class="container text-center my-auto">
+          <!--<a href="{% url 'index' %}"><img src = "{%static "img/logo2.png"%}" width="200" height="50"></a> -->
+          <h1 class="mb-1">HASUI MAKER</h1>
+
+          <div class="container">
+            <table>
+               <form action="{% url 'index' %}"  method="POST" enctype="multipart/form-data">
+                 {% csrf_token %}
+                 {{ form.as_p }}
+                 <input type="image" src ="{% static "img/submit_2.png"%}" width="150">
+               </form>
+            </table>
+            <h1>
+              <em></em>
+            </h1>
+            <a href="{% url 'explain' %}"><img src = {%static "img/about2.png"%} width = "150"></a>
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="overlay"></div>
+      </header>
+
+      <!-- About -->
+
+
+      <!-- Services -->
+    <!--  <section class="content-section bg-primary text-white text-center" id="services">
+        <div class="container">
+          <div class="content-section-heading">
+            <h3 class="text-secondary mb-0">Services</h3>
+            <h2 class="mb-5">What We Offer</h2>
+            <h3 class="mb-5">
+              <em>A Free Bootstrap Theme by Start Bootstrap</em>
+            </h3>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section class="callout">
+        <div class="container text-center">
+          <h2 class="mx-auto mb-5">Welcome to
+            <em>your</em>
+            next website!</h2>
+
+
+          <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
+        </div>
+      </section> -->
+
+      <!-- Portfolio -->
+
+
+      <!-- Bootstrap core JavaScript -->
+
+      <script src="{% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
+      <script src="{% static "js/stylish-portfolio.min.js" %}"></script>
+
+      <!-- Plugin JavaScript -->
+
+
+      <!-- Custom scripts for this template -->
+
+
+
+
+
+
+
+  </body>
+</html>
