@@ -87,7 +87,7 @@ gunicorn==19.8.1
 h5py==2.7.0
 heapdict==1.0.0
 heroku==0.1.4
-html5lib==0.9999999
+html5lib==0.999999999
 icrawler==0.6.2
 idna==2.7
 image==1.5.24
